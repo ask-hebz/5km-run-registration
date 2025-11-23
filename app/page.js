@@ -332,7 +332,7 @@ export default function Home() {
 
             {/* Contact */}
             <div className="bg-orange-500 text-white rounded-lg p-6 shadow-lg text-center">
-              <p className="text-lg mb-2">📞 For more information, contact us via local & WhatsApp:</p>
+              <p className="text-lg mb-2">📞 For more information, contact us via local & WhatsApp: Mr. Nelson Totanes, President- PBBFAK</p>
               <a href="tel:+96555543034" className="text-2xl font-bold hover:underline">
                 +965 55543034
               </a>
