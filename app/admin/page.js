@@ -274,7 +274,7 @@ export default function AdminPage() {
                     Organization
                   </th>
                   <th className="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    T-Shirt
+                    Attire
                   </th>
                   <th className="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Registered
@@ -311,10 +311,10 @@ export default function AdminPage() {
                         {reg.organization || '-'}
                       </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800">
-                        <Shirt className="w-3 h-3 mr-1" />
-                        {reg.tshirt_size}
+                    <td className="px-6 py-4">
+                      <span className="inline-flex items-start px-3 py-1 rounded-lg text-xs font-medium bg-orange-100 text-orange-800 max-w-xs">
+                        <Shirt className="w-3 h-3 mr-1 mt-0.5 flex-shrink-0" />
+                        <span className="break-words">{reg.tshirt_size}</span>
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
