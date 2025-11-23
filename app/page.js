@@ -315,7 +315,7 @@ export default function Home() {
             {/* Payment Info */}
             <div className="bg-white rounded-lg p-4 shadow">
               <p className="text-gray-700 mb-2">
-                <span className="font-semibold text-orange-600">💰 Payment:</span> Through Link/Wamd No. 55543034/GCash No. 09551208044 and Cash on or before <strong>Nov 30, 2025</strong>
+                <span className="font-semibold text-orange-600">💰 Payment:</span> Through Link/Wamd No. 55543034 | GCash No. 09551208044 and Cash on or before <strong>Nov 30, 2025</strong>
               </p>
               <p className="text-red-600 font-semibold">⚠️ Strictly NO registration on Dec 5, 2025</p>
             </div>
@@ -332,7 +332,7 @@ export default function Home() {
 
             {/* Contact */}
             <div className="bg-orange-500 text-white rounded-lg p-6 shadow-lg text-center">
-              <p className="text-lg mb-2">📞 For more information, contact us local & WhatsApp:</p>
+              <p className="text-lg mb-2">📞 For more information, contact us via local & WhatsApp:</p>
               <a href="tel:+96555543034" className="text-2xl font-bold hover:underline">
                 +965 55543034
               </a>
