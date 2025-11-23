@@ -22,7 +22,7 @@ export default function Home() {
     telNo: '',
     email: '',
     organization: '',
-    tshirtSize: 'M'
+    tshirtSize: "Organization's Uniform or Best Run Outfit"
   })
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState({ type: '', text: '' })
@@ -68,7 +68,7 @@ export default function Home() {
         telNo: '',
         email: '',
         organization: '',
-        tshirtSize: 'M'
+        tshirtSize: "Organization's Uniform or Best Run Outfit"
       })
     } catch (error) {
       setMessage({ 
@@ -226,22 +226,17 @@ export default function Home() {
               <div>
                 <label htmlFor="tshirtSize" className="block text-sm font-medium text-gray-700 mb-2">
                   <Shirt className="w-4 h-4 inline mr-1" />
-                  T-shirt Size *
+                  Attire
                 </label>
-                <select
+                <div className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-100 text-gray-700 cursor-not-allowed">
+                  Organization's Uniform or Best Run Outfit
+                </div>
+                <input
+                  type="hidden"
                   id="tshirtSize"
                   name="tshirtSize"
-                  required
-                  value={formData.tshirtSize}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition bg-white"
-                >
-                  {TSHIRT_SIZES.map(size => (
-                    <option key={size.value} value={size.value}>
-                      {size.label}
-                    </option>
-                  ))}
-                </select>
+                  value="Organization's Uniform or Best Run Outfit"
+                />
               </div>
 
               {/* Submit Button */}
@@ -280,6 +275,77 @@ export default function Home() {
             <div>
               <p className="font-semibold text-orange-600 mb-2">🕐 Time</p>
               <p className="text-gray-700">05:30 AM - 7:00 AM</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Registration & Prizes */}
+        <div className="mt-8 bg-gradient-to-br from-orange-50 to-blue-50 rounded-2xl shadow-xl p-8">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Registration & Prizes</h3>
+          
+          <div className="space-y-6 max-w-3xl mx-auto">
+            {/* Registration Fee */}
+            <div className="bg-white rounded-lg p-4 shadow">
+              <p className="text-lg"><span className="font-semibold text-orange-600">💳 Registration Fee:</span> 5 KD</p>
+            </div>
+
+            {/* Prizes */}
+            <div className="bg-white rounded-lg p-6 shadow">
+              <h4 className="font-bold text-lg text-gray-900 mb-4">🏆 Prizes:</h4>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2">•</span>
+                  <span><strong className="text-orange-600">Champion (Male & Female):</strong> 20 KD + Medal + Certificate + Trophy</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2">•</span>
+                  <span><strong className="text-orange-600">1st Place (Male & Female):</strong> 10 KD + Medal + Certificate</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2">•</span>
+                  <span><strong className="text-orange-600">2nd Place (Male & Female):</strong> 5 KD + Medal + Certificate</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-2">•</span>
+                  <span><strong className="text-orange-600">All Participants:</strong> Finisher Medal + Certificate of Participation</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Payment Info */}
+            <div className="bg-white rounded-lg p-4 shadow">
+              <p className="text-gray-700 mb-2">
+                <span className="font-semibold text-orange-600">💰 Payment:</span> Through Link/Wamd/GCash and Cash on or before <strong>Nov 30, 2025</strong>
+              </p>
+              <p className="text-red-600 font-semibold">⚠️ Strictly NO registration on Dec 5, 2025</p>
+            </div>
+
+            {/* Event Purpose */}
+            <div className="bg-white rounded-lg p-6 shadow">
+              <p className="text-gray-700 leading-relaxed mb-4">
+                This event aims to promote health and wellness while bringing our community together to make a meaningful impact. Your participation will help raise awareness and funds to provide essential supplies for affected families.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Whether you run, jog, walk, or simply show support, your presence will truly make a difference.
+              </p>
+            </div>
+
+            {/* Contact */}
+            <div className="bg-orange-500 text-white rounded-lg p-6 shadow-lg text-center">
+              <p className="text-lg mb-2">📞 For more information, contact us:</p>
+              <a href="tel:+96555543034" className="text-2xl font-bold hover:underline">
+                +965 55543034
+              </a>
+            </div>
+
+            {/* Thank You */}
+            <div className="text-center text-gray-700">
+              <p className="text-lg font-semibold">
+                Thank you for your time, support, and commitment to positive change.
+              </p>
+              <p className="text-lg mt-2">
+                We look forward to seeing you at the event! 🏃‍♀️🏃‍♂️
+              </p>
             </div>
           </div>
         </div>
